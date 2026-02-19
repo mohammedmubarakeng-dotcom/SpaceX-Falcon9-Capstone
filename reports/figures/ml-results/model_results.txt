@@ -1,0 +1,36 @@
+============================================================
+SPACEX FALCON 9 - MACHINE LEARNING RESULTS
+============================================================
+
+MODEL PERFORMANCE SUMMARY:
+----------------------------------------
+Model                Val Acc    Test Acc   Best Params
+----------------------------------------
+Logistic Regression  0.846      0.833      {'C': 0.01, 'penalty': 'l2', 'solver': 'lbfgs'}
+SVM                  0.848      0.833      {'C': np.float64(1.0), 'gamma': np.float64(0.03162277660168379), 'kernel': 'sigmoid'}
+Decision Tree        0.871      0.778      {'criterion': 'gini', 'max_depth': 4, 'min_samples_leaf': 4, 'min_samples_split': 2}
+KNN                  0.848      0.833      {'n_neighbors': 11, 'p': 1, 'weights': 'uniform'}
+
+============================================================
+BEST MODEL: Logistic Regression
+Test Accuracy: 0.833
+============================================================
+
+CONFUSION MATRICES:
+----------------------------------------
+
+Logistic Regression:
+[[3, 3],
+ [0, 12]]
+
+SVM:
+[[3, 3],
+ [0, 12]]
+
+Decision Tree:
+[[3, 3],
+ [1, 11]]
+
+KNN:
+[[3, 3],
+ [0, 12]]

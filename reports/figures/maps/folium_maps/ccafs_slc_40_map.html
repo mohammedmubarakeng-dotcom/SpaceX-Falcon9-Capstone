@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3391b675aa312e160ee942857f827bb9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position: fixed; top: 10px; left: 50px; background-color: white; padding: 5px; border-radius: 5px; border: 1px solid grey; z-index: 9999;"><b>CCAFS SLC-40 - Launch Details</b></div>
+    
+            <div class="folium-map" id="map_3391b675aa312e160ee942857f827bb9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3391b675aa312e160ee942857f827bb9 = L.map(
+                "map_3391b675aa312e160ee942857f827bb9",
+                {
+                    center: [28.56319718, -80.57682003],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f617e66c3565022adbe936252d102447 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f617e66c3565022adbe936252d102447.addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var circle_ada9a78a2b2ecc80bfccffe2c2f9b1c9 = L.circle(
+                [28.56319718, -80.57682003],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+        var popup_f79b2cc1b1e65dec5c99db4fce995ca2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d661b69ac1edf6b3b34fc0f482a755d = $(`<div id="html_3d661b69ac1edf6b3b34fc0f482a755d" style="width: 100.0%; height: 100.0%;"><b>CCAFS SLC-40</b><br>Launch Site</div>`)[0];
+                popup_f79b2cc1b1e65dec5c99db4fce995ca2.setContent(html_3d661b69ac1edf6b3b34fc0f482a755d);
+            
+        
+
+        circle_ada9a78a2b2ecc80bfccffe2c2f9b1c9.bindPopup(popup_f79b2cc1b1e65dec5c99db4fce995ca2)
+        ;
+
+        
+    
+    
+            var marker_99bcb14ea589dbe7985314f5e6b43c1b = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_94565ed85a9d2f29241b34fb1ba2071c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08b3ae294c4053c35b7ac3536a0d47e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_feaf57686f0ee862f04b83241e161ed4 = $(`<div id="html_feaf57686f0ee862f04b83241e161ed4" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_08b3ae294c4053c35b7ac3536a0d47e8.setContent(html_feaf57686f0ee862f04b83241e161ed4);
+            
+        
+
+        marker_99bcb14ea589dbe7985314f5e6b43c1b.bindPopup(popup_08b3ae294c4053c35b7ac3536a0d47e8)
+        ;
+
+        
+    
+    
+            marker_99bcb14ea589dbe7985314f5e6b43c1b.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_99bcb14ea589dbe7985314f5e6b43c1b.setIcon(icon_94565ed85a9d2f29241b34fb1ba2071c);
+            
+    
+            var marker_7352fa2917150400b70f9696d3d5e94b = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_666564397f6237b89bd248cc95a3f563 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c4276b8d58005b87e285c7a07d7d816 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cac1245fcd3c6e9614fdadfc5af6b84c = $(`<div id="html_cac1245fcd3c6e9614fdadfc5af6b84c" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_9c4276b8d58005b87e285c7a07d7d816.setContent(html_cac1245fcd3c6e9614fdadfc5af6b84c);
+            
+        
+
+        marker_7352fa2917150400b70f9696d3d5e94b.bindPopup(popup_9c4276b8d58005b87e285c7a07d7d816)
+        ;
+
+        
+    
+    
+            marker_7352fa2917150400b70f9696d3d5e94b.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7352fa2917150400b70f9696d3d5e94b.setIcon(icon_666564397f6237b89bd248cc95a3f563);
+            
+    
+            var marker_75232d534214c26761e16811dbf826ca = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_cfc1b2ff550a8cd27d6357fb040e9834 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51167d01b79187f60e6221987d8694a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfbefe00b5ee4b20b1d47f39db4814e4 = $(`<div id="html_dfbefe00b5ee4b20b1d47f39db4814e4" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_51167d01b79187f60e6221987d8694a7.setContent(html_dfbefe00b5ee4b20b1d47f39db4814e4);
+            
+        
+
+        marker_75232d534214c26761e16811dbf826ca.bindPopup(popup_51167d01b79187f60e6221987d8694a7)
+        ;
+
+        
+    
+    
+            marker_75232d534214c26761e16811dbf826ca.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75232d534214c26761e16811dbf826ca.setIcon(icon_cfc1b2ff550a8cd27d6357fb040e9834);
+            
+    
+            var marker_86f78890e7a4d33ac672b011aa0e09f5 = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_0d68ba5cfcdd56616adb6a52cc16334a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a35b3397c48068e2622596fbf0c4ab79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_753528194cb6d8d7da629aab72df489b = $(`<div id="html_753528194cb6d8d7da629aab72df489b" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_a35b3397c48068e2622596fbf0c4ab79.setContent(html_753528194cb6d8d7da629aab72df489b);
+            
+        
+
+        marker_86f78890e7a4d33ac672b011aa0e09f5.bindPopup(popup_a35b3397c48068e2622596fbf0c4ab79)
+        ;
+
+        
+    
+    
+            marker_86f78890e7a4d33ac672b011aa0e09f5.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86f78890e7a4d33ac672b011aa0e09f5.setIcon(icon_0d68ba5cfcdd56616adb6a52cc16334a);
+            
+    
+            var marker_9648299f773e9a18106ea66e2bd20b00 = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_ff58532bba24d533a891bc121164b76c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60e204c4eaf18300c69797f0de278e38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a9bced0b668407ff2faca6f4ac73c57 = $(`<div id="html_3a9bced0b668407ff2faca6f4ac73c57" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_60e204c4eaf18300c69797f0de278e38.setContent(html_3a9bced0b668407ff2faca6f4ac73c57);
+            
+        
+
+        marker_9648299f773e9a18106ea66e2bd20b00.bindPopup(popup_60e204c4eaf18300c69797f0de278e38)
+        ;
+
+        
+    
+    
+            marker_9648299f773e9a18106ea66e2bd20b00.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9648299f773e9a18106ea66e2bd20b00.setIcon(icon_ff58532bba24d533a891bc121164b76c);
+            
+    
+            var marker_13677275d9b6ab067e181a944de0fc20 = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_c83b91e6441d15a251f13853d399fbd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a45b6147b2f92147ec7f5a0d3b76e5e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1eada553d460b574be127aeab7f04bc = $(`<div id="html_b1eada553d460b574be127aeab7f04bc" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_a45b6147b2f92147ec7f5a0d3b76e5e5.setContent(html_b1eada553d460b574be127aeab7f04bc);
+            
+        
+
+        marker_13677275d9b6ab067e181a944de0fc20.bindPopup(popup_a45b6147b2f92147ec7f5a0d3b76e5e5)
+        ;
+
+        
+    
+    
+            marker_13677275d9b6ab067e181a944de0fc20.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13677275d9b6ab067e181a944de0fc20.setIcon(icon_c83b91e6441d15a251f13853d399fbd4);
+            
+    
+            var marker_5193b59e29eca7ad450f407cb476359f = L.marker(
+                [28.56319718, -80.57682003],
+                {
+}
+            ).addTo(map_3391b675aa312e160ee942857f827bb9);
+        
+    
+            var icon_49f2413f4690153d3f61c499473b7622 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86d632116746bd9ab32a7d31cc11bd96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31838ad83a23179933123e5c07de9579 = $(`<div id="html_31838ad83a23179933123e5c07de9579" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_86d632116746bd9ab32a7d31cc11bd96.setContent(html_31838ad83a23179933123e5c07de9579);
+            
+        
+
+        marker_5193b59e29eca7ad450f407cb476359f.bindPopup(popup_86d632116746bd9ab32a7d31cc11bd96)
+        ;
+
+        
+    
+    
+            marker_5193b59e29eca7ad450f407cb476359f.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5193b59e29eca7ad450f407cb476359f.setIcon(icon_49f2413f4690153d3f61c499473b7622);
+            
+</script>
+</html>

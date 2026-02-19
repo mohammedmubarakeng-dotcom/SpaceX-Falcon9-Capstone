@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92edc4e20a73d569ba3d409831950419 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position: fixed; top: 10px; left: 50px; background-color: white; padding: 5px; border-radius: 5px; border: 1px solid grey; z-index: 9999;"><b>VAFB SLC-4E - Launch Details</b></div>
+    
+            <div class="folium-map" id="map_92edc4e20a73d569ba3d409831950419" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92edc4e20a73d569ba3d409831950419 = L.map(
+                "map_92edc4e20a73d569ba3d409831950419",
+                {
+                    center: [34.63283416, -120.6107455],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29f16fe348769b2cedc564652e0ee2de = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_29f16fe348769b2cedc564652e0ee2de.addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var circle_7868b71e8b4e3b285d1c895452920dda = L.circle(
+                [34.63283416, -120.6107455],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+        var popup_dc76d1639a794bda5ed9c054dc411a0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab2eff90a71f3695391cf659f1299686 = $(`<div id="html_ab2eff90a71f3695391cf659f1299686" style="width: 100.0%; height: 100.0%;"><b>VAFB SLC-4E</b><br>Launch Site</div>`)[0];
+                popup_dc76d1639a794bda5ed9c054dc411a0d.setContent(html_ab2eff90a71f3695391cf659f1299686);
+            
+        
+
+        circle_7868b71e8b4e3b285d1c895452920dda.bindPopup(popup_dc76d1639a794bda5ed9c054dc411a0d)
+        ;
+
+        
+    
+    
+            var marker_05ce0128506562bcb781ede922f308cc = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_d32a7c35c7e8536161a1a0ca7b4ba051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a9d222c10bb8113ca91917844dd2579 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb8de7a04149aa16ef12e5e6f6639805 = $(`<div id="html_fb8de7a04149aa16ef12e5e6f6639805" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_8a9d222c10bb8113ca91917844dd2579.setContent(html_fb8de7a04149aa16ef12e5e6f6639805);
+            
+        
+
+        marker_05ce0128506562bcb781ede922f308cc.bindPopup(popup_8a9d222c10bb8113ca91917844dd2579)
+        ;
+
+        
+    
+    
+            marker_05ce0128506562bcb781ede922f308cc.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05ce0128506562bcb781ede922f308cc.setIcon(icon_d32a7c35c7e8536161a1a0ca7b4ba051);
+            
+    
+            var marker_df0dc652203d1684feb0073baf5d4e0e = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_bb64eca59cd6309a4e5e7a9a5b348173 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa68bb35017c2f5b5b2f6e0f356775fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05186c2ea63b23111a3b68e01b60c72c = $(`<div id="html_05186c2ea63b23111a3b68e01b60c72c" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_aa68bb35017c2f5b5b2f6e0f356775fd.setContent(html_05186c2ea63b23111a3b68e01b60c72c);
+            
+        
+
+        marker_df0dc652203d1684feb0073baf5d4e0e.bindPopup(popup_aa68bb35017c2f5b5b2f6e0f356775fd)
+        ;
+
+        
+    
+    
+            marker_df0dc652203d1684feb0073baf5d4e0e.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df0dc652203d1684feb0073baf5d4e0e.setIcon(icon_bb64eca59cd6309a4e5e7a9a5b348173);
+            
+    
+            var marker_711d7e26d400d549c73bb18914cefd60 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_9563813e3df23c0f00733b209827d157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e7c905787f800370ac403a54fccaec7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6621b783a25bcc7f9e717a7302169e2e = $(`<div id="html_6621b783a25bcc7f9e717a7302169e2e" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_9e7c905787f800370ac403a54fccaec7.setContent(html_6621b783a25bcc7f9e717a7302169e2e);
+            
+        
+
+        marker_711d7e26d400d549c73bb18914cefd60.bindPopup(popup_9e7c905787f800370ac403a54fccaec7)
+        ;
+
+        
+    
+    
+            marker_711d7e26d400d549c73bb18914cefd60.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_711d7e26d400d549c73bb18914cefd60.setIcon(icon_9563813e3df23c0f00733b209827d157);
+            
+    
+            var marker_d7388aba504b16f8d6b6b7086fcfdd8e = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_5ec7d322dd79ba75e214d2b3a9fd3d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68d3a000a034f7ab8659df27b65a4c0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9862d0bb51cd7a7328035566be10348 = $(`<div id="html_b9862d0bb51cd7a7328035566be10348" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_68d3a000a034f7ab8659df27b65a4c0f.setContent(html_b9862d0bb51cd7a7328035566be10348);
+            
+        
+
+        marker_d7388aba504b16f8d6b6b7086fcfdd8e.bindPopup(popup_68d3a000a034f7ab8659df27b65a4c0f)
+        ;
+
+        
+    
+    
+            marker_d7388aba504b16f8d6b6b7086fcfdd8e.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7388aba504b16f8d6b6b7086fcfdd8e.setIcon(icon_5ec7d322dd79ba75e214d2b3a9fd3d1e);
+            
+    
+            var marker_61273458ec8d920e88f9926f2fc7e7e4 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_527fa688c74610ca09fc993b65d25736 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abd821dc87bd22b7f2721858be73524e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7b4be635d13b0e28ad298cd10e28c32 = $(`<div id="html_a7b4be635d13b0e28ad298cd10e28c32" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_abd821dc87bd22b7f2721858be73524e.setContent(html_a7b4be635d13b0e28ad298cd10e28c32);
+            
+        
+
+        marker_61273458ec8d920e88f9926f2fc7e7e4.bindPopup(popup_abd821dc87bd22b7f2721858be73524e)
+        ;
+
+        
+    
+    
+            marker_61273458ec8d920e88f9926f2fc7e7e4.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61273458ec8d920e88f9926f2fc7e7e4.setIcon(icon_527fa688c74610ca09fc993b65d25736);
+            
+    
+            var marker_b8ecb759e14c9b7966c303b18cc541a3 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_2f25715d927bb25a49a709784b5bf0b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f16cf16156f29cfa294c4b6230e98869 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eda22102f1196af838e7660419dfaa53 = $(`<div id="html_eda22102f1196af838e7660419dfaa53" style="width: 100.0%; height: 100.0%;">Launch Outcome: Success</div>`)[0];
+                popup_f16cf16156f29cfa294c4b6230e98869.setContent(html_eda22102f1196af838e7660419dfaa53);
+            
+        
+
+        marker_b8ecb759e14c9b7966c303b18cc541a3.bindPopup(popup_f16cf16156f29cfa294c4b6230e98869)
+        ;
+
+        
+    
+    
+            marker_b8ecb759e14c9b7966c303b18cc541a3.bindTooltip(
+                `<div>
+                     Success
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8ecb759e14c9b7966c303b18cc541a3.setIcon(icon_2f25715d927bb25a49a709784b5bf0b3);
+            
+    
+            var marker_b29a08a3ecef260b9555fb5d605259b9 = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_d0f1d32d1a9c54876ef32b030bc07a91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00607bc0de96125197903600fa76d838 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fffc2ccae64799b664ae1feda9c3b60e = $(`<div id="html_fffc2ccae64799b664ae1feda9c3b60e" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_00607bc0de96125197903600fa76d838.setContent(html_fffc2ccae64799b664ae1feda9c3b60e);
+            
+        
+
+        marker_b29a08a3ecef260b9555fb5d605259b9.bindPopup(popup_00607bc0de96125197903600fa76d838)
+        ;
+
+        
+    
+    
+            marker_b29a08a3ecef260b9555fb5d605259b9.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b29a08a3ecef260b9555fb5d605259b9.setIcon(icon_d0f1d32d1a9c54876ef32b030bc07a91);
+            
+    
+            var marker_a13495df3a36f756d8a178d1cad39cfd = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_2fe1591488df571257bc8eae508ba03e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e51f5ce46dd985f45e42bbbab84947d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a8d13da6476df7ea655ea6de5f86ade = $(`<div id="html_9a8d13da6476df7ea655ea6de5f86ade" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_2e51f5ce46dd985f45e42bbbab84947d.setContent(html_9a8d13da6476df7ea655ea6de5f86ade);
+            
+        
+
+        marker_a13495df3a36f756d8a178d1cad39cfd.bindPopup(popup_2e51f5ce46dd985f45e42bbbab84947d)
+        ;
+
+        
+    
+    
+            marker_a13495df3a36f756d8a178d1cad39cfd.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a13495df3a36f756d8a178d1cad39cfd.setIcon(icon_2fe1591488df571257bc8eae508ba03e);
+            
+    
+            var marker_3c45355dfb1d293f1bfdda0dce8d418c = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_cb5dfc071383ebdb7da8a233d5d32757 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c36376ba85c94013751f6a5cf3abff02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_971cf044b2936a6870b77a682abf8931 = $(`<div id="html_971cf044b2936a6870b77a682abf8931" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_c36376ba85c94013751f6a5cf3abff02.setContent(html_971cf044b2936a6870b77a682abf8931);
+            
+        
+
+        marker_3c45355dfb1d293f1bfdda0dce8d418c.bindPopup(popup_c36376ba85c94013751f6a5cf3abff02)
+        ;
+
+        
+    
+    
+            marker_3c45355dfb1d293f1bfdda0dce8d418c.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c45355dfb1d293f1bfdda0dce8d418c.setIcon(icon_cb5dfc071383ebdb7da8a233d5d32757);
+            
+    
+            var marker_73855dffb9ffce9a788a5bbf69ebfc7f = L.marker(
+                [34.63283416, -120.6107455],
+                {
+}
+            ).addTo(map_92edc4e20a73d569ba3d409831950419);
+        
+    
+            var icon_0359e2c6435854cdca73e70b28429cc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7fc17caf1c20e016d6abe33ed11dd2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a3a9777e05d98d5f214390040ebfcf7 = $(`<div id="html_5a3a9777e05d98d5f214390040ebfcf7" style="width: 100.0%; height: 100.0%;">Launch Outcome: Failure</div>`)[0];
+                popup_e7fc17caf1c20e016d6abe33ed11dd2b.setContent(html_5a3a9777e05d98d5f214390040ebfcf7);
+            
+        
+
+        marker_73855dffb9ffce9a788a5bbf69ebfc7f.bindPopup(popup_e7fc17caf1c20e016d6abe33ed11dd2b)
+        ;
+
+        
+    
+    
+            marker_73855dffb9ffce9a788a5bbf69ebfc7f.bindTooltip(
+                `<div>
+                     Failure
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73855dffb9ffce9a788a5bbf69ebfc7f.setIcon(icon_0359e2c6435854cdca73e70b28429cc7);
+            
+</script>
+</html>
