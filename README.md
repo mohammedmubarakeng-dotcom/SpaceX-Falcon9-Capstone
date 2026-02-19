@@ -23,84 +23,9 @@ Business Value
 | **Best Booster Version** | Block 5 (98% success) |
 | **Best ML Model** | SVM (83.3% accuracy) |
 
-🛠️ Technical Architecture
-
-                ┌─────────────────┐
-                │   Web Scraping  │
-                │   SpaceX Wiki   │
-                └────────┬────────┘
-                         ↓
- ┌─────────────────────────────────────────┐
-       │ Data Collection & Wrangling │
-       │ ┌────────┐ ┌────────┐ ┌────────┐ │
-       │ │ SQL │ │ Pandas │ │ NumPy │ │
-       │ └────────┘ └────────┘ └────────┘ │
- └─────────────────────────────────────────┘
-                         ↓
- ┌─────────────────────────────────────────┐
-       │ Exploratory Data Analysis │
-       │ ┌────────┐ ┌────────┐ ┌────────┐ │
-       │ │Matplotlib│ Seaborn │ Folium │ │
-       │ └────────┘ └────────┘ └────────┘ │
- └─────────────────────────────────────────┘
-                         ↓
- ┌─────────────────────────────────────────┐
-      │ Machine Learning Pipeline │
-      │ ┌────────┐ ┌────────┐ ┌────────┐ │
-      │ │ SVM │ │Logistic│ │Decision│ │
-      │ │ │ │Regression│ │ Tree │ │
-      │ └────────┘ └────────┘ └────────┘ │
-      │ ┌─────────────────────────────────┐ │
-      │ │ KNN • GridSearchCV │ │
-      │ └─────────────────────────────────┘ │
- └─────────────────────────────────────────┘
-                        ↓
-                        ↓
-              ┌─────────────────┐
-                 │ Interactive │
-                 │ Dashboard │
-              └─────────────────┘
 
 
-📂 Repository Structure
-
-├── 📁 data/ # Dataset directory
-│ ├── 📁 raw/ # Original, unmodified data
-│ │ ├── spacex_web_scraped.csv # Raw web-scraped data
-│ │ └── dataset_part_1.csv # Original raw dataset
-│ ├── 📁 processed/ # Cleaned and transformed data
-│ │ ├── dataset_part_2.csv # Data with Class labels
-│ │ └── dataset_part_3.csv # One-hot encoded features
-│ └── README.md # Data documentation
-│
-├── 📁 notebooks/ # Jupyter notebooks for each phase
-│ ├── 01-data-collection-web-scraping.ipynb
-│ ├── 02-data-wrangling.ipynb
-│ ├── 03-eda-sql.ipynb
-│ ├── 04-eda-visualization.ipynb
-│ ├── 05-interactive-visualization-folium.ipynb
-│ └── 06-machine-learning-prediction.ipynb
-│
-├── 📁 src/ # Source code
-│ └── spacex_dashboard.py # Interactive Dash application
-│
-├── 📁 reports/ # Generated analysis
-│ └── 📁 figures/ # Saved visualizations
-│
-├── 📁 docs/ # Documentation
-│ └── 📁 images/ # README images
-│
-│
-├── 📄 README.md # Project documentation (this file)
-├── 📄 requirements.txt # Dependencies
-├── 📄 LICENSE # MIT License
-└── 📄 .gitignore # Git ignore rules
-
-
-🔬 Methodology
-
-
-## 🔬 Methodology
+Methodology
 
 1. Data Collection (`notebooks/01-data-collection-web-scraping.ipynb`)
 
@@ -355,26 +280,26 @@ beautifulsoup4>=4.10.0
 
 | Visualization | Key Insight |
 |:---|:---|
-| **Flight Number vs Success** | Success rate improves over time (learning curve effect) |
-| **Payload Mass vs Success** | Optimal payload range: 5,000-10,000 kg |
-| **Launch Site Analysis** | KSC LC-39A: 80%+ success rate |
-| **Orbit Type Performance** | LEO and ISS missions most successful |
-| **Yearly Success Trend** | 40% (2013) → 85% (2020) improvement |
-| **Booster Version Analysis** | Block 5: 98% success rate |
-| **Interactive Maps** | All launch sites within 1 km of coastline |
+| Flight Number vs Success| Success rate improves over time (learning curve effect) |
+| Payload Mass vs Success| Optimal payload range: 5,000-10,000 kg |
+| Launch Site Analysis| KSC LC-39A: 80%+ success rate |
+| Orbit Type Performance| LEO and ISS missions most successful |
+| Yearly Success Trend| 40% (2013) → 85% (2020) improvement |
+| Booster Version Analysis| Block 5: 98% success rate |
+| Interactive Maps| All launch sites within 1 km of coastline |
 
 🏆 Results & Conclusions
 
 | Finding | Value |
 |:---|:---|
-| **Success Rate Evolution** | 40% (2013) → 85% (2020) |
-| **Optimal Payload Range** | 5,000-10,000 kg |
-| **Best Launch Site** | KSC LC-39A (80%+ success) |
-| **Best Booster Version** | Block 5 (98% success) |
-| **Best ML Model** | Logistic Regression (99.9% accuracy) |
-| **Model Challenge** | 3 false positives per model |
-| **Success Detection** | 100% recall (Logistic Regression, KNN) |
-| **Key Features** | Payload mass, launch site, orbit type |
+| Success Rate Evolution| 40% (2013) → 85% (2020) |
+| Optimal Payload Range| 5,000-10,000 kg |
+| Best Launch Site| KSC LC-39A (80%+ success) |
+| Best Booster Version| Block 5 (98% success) |
+| Best ML Model| Logistic Regression (99.9% accuracy) |
+| Model Challenge| 3 false positives per model |
+| Success Detection | 100% recall (Logistic Regression, KNN) |
+| Key Features | Payload mass, launch site, orbit type |
 
 
 🤝 Contributing
